@@ -1,0 +1,12 @@
+---
+- name: adding users
+  hosts: localhost 
+  tasks:
+    - name: user add cmds
+      user: 
+        name: bob
+    - name: second user
+      user: 
+        name: sam
+    
+      
