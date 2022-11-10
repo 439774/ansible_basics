@@ -1,0 +1,13 @@
+---
+- name: Creating a config file
+  hosts: all
+  tasks:
+    - name: Creating a config file with a text
+      file:
+        path: /tmp/config
+        state: touch
+    - name: Adding line to file
+      lineinfile:
+        path: /tmp/config
+        line: This is config file
+        create: yes
