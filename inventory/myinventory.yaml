@@ -1,8 +1,8 @@
 ---
-  all:
+  all: # main group
     hosts:
-      10.116.0.4
-      10.116.0.2
+      10.116.0.4:
+      10.116.0.2:
     children:
       HOST1: # group name  
         hosts: 
